@@ -16,7 +16,7 @@ test-e2e:
 	.\\gradlew.bat testDebugUnitTest --rerun-tasks
 
 a11y:
-	@echo "Accessibility: not applicable to Go."
+	@echo "Accessibility: not applicable to Kotlin."
 
 coverage:
 	.\\gradlew.bat jacocoTestReport
