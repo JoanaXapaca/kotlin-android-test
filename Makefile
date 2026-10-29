@@ -15,6 +15,9 @@ test:
 test-e2e:
 	.\\gradlew.bat testDebugUnitTest --rerun-tasks
 
+a11y:
+	@echo "Accessibility: not applicable to Go."
+
 coverage:
 	.\\gradlew.bat jacocoTestReport
 
@@ -22,8 +25,7 @@ build:
 	.\\gradlew.bat assembleDebug
 
 sonar:
-	.\\gradlew.bat jacocoTestReport
-	sonar-scanner -Dsonar.qualitygate.wait=true
+	.\\scripts\\run_sonar.bat
 
 clean:
 	.\\gradlew.bat clean
