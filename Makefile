@@ -24,6 +24,9 @@ coverage:
 build:
 	.\\gradlew.bat assembleDebug
 
+test-integration:
+	@echo "Container integration not applicable"
+
 sonar:
 	.\\scripts\\run_sonar.bat
 
