@@ -30,5 +30,8 @@ test-integration:
 sonar:
 	.\\scripts\\run_sonar.bat
 
+docker-build:
+	@echo "Docker build not applicable to Kotlin"
+
 clean:
 	.\\gradlew.bat clean
