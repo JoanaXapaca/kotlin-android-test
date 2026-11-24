@@ -24,14 +24,8 @@ coverage:
 build:
 	.\\gradlew.bat assembleDebug
 
-test-integration:
-	@echo "Container integration not applicable"
-
 sonar:
 	.\\scripts\\run_sonar.bat
-
-docker-build:
-	@echo "Docker build not applicable to Kotlin"
 
 clean:
 	.\\gradlew.bat clean
