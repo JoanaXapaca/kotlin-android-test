@@ -6,6 +6,10 @@ install:
 lint:
 	.\\gradlew.bat lint
 
+audit:
+	@echo "OWASP Dependency-Check not implemented for Kotlin"
+
+
 type-check:
 	.\\gradlew.bat compileDebugKotlin
 
