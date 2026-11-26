@@ -1,14 +1,10 @@
-.PHONY: install lint type-check test test-e2e build sonar coverage clean
+.PHONY: install lint type-check test test-e2e coverage a11y build sonar clean
 
 install:
 	.\\gradlew.bat dependencies
 
 lint:
 	.\\gradlew.bat lint
-
-audit:
-	@echo "OWASP Dependency-Check not implemented for Kotlin"
-
 
 type-check:
 	.\\gradlew.bat compileDebugKotlin
@@ -19,11 +15,11 @@ test:
 test-e2e:
 	.\\gradlew.bat testDebugUnitTest --rerun-tasks
 
-a11y:
-	@echo "Accessibility: not applicable to Kotlin."
-
 coverage:
 	.\\gradlew.bat jacocoTestReport
+
+a11y:
+	@echo "Accessibility: not applicable to Kotlin"
 
 build:
 	.\\gradlew.bat assembleDebug
